@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(255, 255, 255)), url("intro-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h1 {
+    text-align: center;
+    color: #2396c7;
+    font-size: 50px;
+}
+
+.intro p {
+    margin-top: 2%;
+    text-align: center;
+    color: #2396c7;
+    font-size: 30px;
+}
+
+#join {
+    margin-top: 2%;
+    width: 100px;
+    padding: 15px 10px;
+    border-radius: 10%;
+    border-color: #2396c7;
+    color: white;
+    background-color: #2396c7;
+    box-shadow: 4px 5px 20px 2px #2396c7;
+    font-size: 18px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.about-text {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #c4edff;
+    align-items: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20%;
+    border-radius: 10%;
+    padding: 20px 10px;
+    box-shadow: 15px 16px 20px 20px #c4edff;
+}
+
+.about h2 {
+    color: #0085be;
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+.about p {
+    margin-top: 2%;
+    color: #0085be;
+    font-size: 18px;
+}
+
+.about-image {
+    margin-top: 0%;
+    background-image: url("jobs-img.jpg");
+    width: 45%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    overflow: hidden;
+}
+
+.jobs {
+    height: 500px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 60px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 40px;
+}
+
+.job h4 {
+    color: #2396c7;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.job p {
+    color: #555;
+    font-size: 16px;
+}
+
+.job button {
+    background-color: #2396c7;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.job button:hover {
+    background-color: #1a7ea8;
+}
