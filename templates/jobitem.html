@@ -1,0 +1,6 @@
+<h4>{{job['title']}}</h4>
+<h5>Location: {{job['location']}}</h5>
+{% if 'salary' in job %}
+    <h5>Salary: {{job['salary']}}</h5>
+{% endif %}
+<button>Apply!</button>

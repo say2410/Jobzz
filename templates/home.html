@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Jobz</title>
+</head>
+<body>
+   <div class="intro">
+    <h1>Jobzz</h1>
+    <p>Find Jobs with a Click!</p>
+    <button id="join">Join us!</button>
+   </div>
+   <div class="about">
+    <div class="about-image"></div>
+    <div class="about-text">
+    <h2>About us</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta porro cum sequi maxime perspiciatis delectus nostrum. Amet assumenda error saepe tempore quia! Rem, dolores esse.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tenetur alias quaerat et ex voluptatibus neque dignissimos veniam libero natus!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, odit et! Sint, ipsa perferendis! Voluptatum voluptatibus libero doloribus! Obcaecati vitae temporibus repellat facilis est autem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tenetur alias quaerat et ex voluptatibus neque dignissimos veniam libero natus!</p>
+    </div>
+   </div>
+   <h2 id="offers">Job Offers</h2>
+   <div class="jobs">
+    
+        {% for job in jobs %}
+        <div class="job">
+            {% include 'jobitem.html' %}
+        </div>
+        {% endfor %}
+
+    
+   </div>
+</body>
+</html>
