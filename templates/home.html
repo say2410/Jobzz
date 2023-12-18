@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     <title>Jobz</title>
+    
 </head>
 <body>
+    {% include 'navbar.html' %}
    <div class="intro">
     <h1>Jobzz</h1>
     <p>Find Jobs with a Click!</p>
@@ -33,5 +35,6 @@
 
     
    </div>
+   {% include 'footer.html' %}
 </body>
 </html>
