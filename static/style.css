@@ -98,6 +98,12 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+#offers{
+    text-align: center;
+    font-size: 40px;
+    color: #0085be;
+    margin-top: 10%;
+}
 
 .job {
     display: flex;
